@@ -6,11 +6,9 @@ from functools import lru_cache
 st.set_page_config(page_title="Stock Portfolio Tracker", layout="wide")
 
 st.title("📈 Stock Portfolio Tracker")
-st.write("Live prices via Finnhub. Enter your Finnhub API key or set environment variable `FINNHUB_API_KEY`.")
+st.write("Live prices via Finnhub.")
 
-finnhub_api_key = st.text_input("Finnhub API Key", value="", type="password")
-if not finnhub_api_key:
-    st.warning("Finnhub API key is required for live quotes. You can get one at https://finnhub.io.")
+finnhub_api_key = "d72s12pr01qlfd9oci00d72s12pr01qlfd9oci0g"
 
 # User stock input area
 st.header("Portfolio Positions")
